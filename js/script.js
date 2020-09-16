@@ -4,7 +4,18 @@
 // Se è <= 5 il quadrato diventa giallo, 
 // se è > di 5 il quadrato diventa verde.
 // Il numero ottenuto appare al centro del quadrato.
+$(document).ready(function() {
+var numberSquare = 36;
 
+var source =$("#entry-template").html();
+var template = Handlebars.compile(source);
+
+for (var i = 0; i < numberSquare; i++) {
+      
+    var html = template();
+    
+    $(".row").append(html);
+}
 
 $(document).on("click",".box",
     function() {
@@ -35,5 +46,4 @@ $(document).on("click",".box",
     }
 );
 
-
-
+});
