@@ -1,0 +1,41 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+ }	
+
+.container{
+    margin-left:500px;
+    margin-top:300px
+}
+
+.row{
+    width: 480px;
+    height: 80px;
+    background-color: pink;
+}
+
+.box{
+    float: left;
+    background-color: lightgreen;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border:1px solid #000;
+    position: relative;
+}
+
+.box>span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
